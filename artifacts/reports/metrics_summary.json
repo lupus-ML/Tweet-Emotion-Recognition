@@ -1,0 +1,9 @@
+{
+    "test_accuracy": 0.8942132592201233,
+    "test_loss": 0.21594899892807007,
+    "baseline_accuracy": 0.91,
+    "deep_model_accuracy": 0.8942132592201233,
+    "num_classes": 6,
+    "vocab_size": 20000,
+    "sequence_length": 40
+}
