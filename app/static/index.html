@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Emotion Recognizer</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Emotion Recognizer</h1>
+    <p class="muted">Type a sentence. The model will guess the emotion.</p>
+
+    <textarea id="text" rows="4" placeholder="Example: I feel nervous about tomorrow..."></textarea>
+
+    <div class="row">
+      <button id="predictBtn">Predict</button>
+      <button id="clearBtn" class="secondary">Clear</button>
+    </div>
+
+    <section id="result" class="result hidden">
+      <h2>Result</h2>
+      <p><strong>Prediction:</strong> <span id="pred"></span></p>
+      <p><strong>Confidence:</strong> <span id="conf"></span></p>
+
+      <h3>All probabilities</h3>
+      <div id="bars"></div>
+    </section>
+
+    <p id="error" class="error hidden"></p>
+  </main>
+
+  <script defer src="/static/app.js"></script>
+</body>
+</html>
